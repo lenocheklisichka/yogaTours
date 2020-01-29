@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Muller Medium';
+  src: url('../fonts/MullerMedium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Regular';
+  src: url('/fonts/ofont.ru_Muller.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Bold';
+  src: url('../fonts/ofont.ru_Muller\ \(1\).ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Light Italic';
+  src: url('../fonts/Fontfabric\ -\ MullerLightItalic.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin medium {
+  font-family: 'Muller Medium', sans-serif;
+}
+
+@mixin regular {
+  font-family: 'Muller Regular', sans-serif;
+}
+
+@mixin bold {
+  font-family: 'Muller Bold', sans-serif;
+}
+
+@mixin lightitalic {
+  font-family: 'Muller Light Italic', sans-serif;
+}
