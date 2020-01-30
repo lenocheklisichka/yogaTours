@@ -8,6 +8,13 @@
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: 'Muller Medium';
   src: url("../fonts/MullerMedium.ttf");
@@ -56,9 +63,17 @@ body {
   margin-top: 60px;
 }
 
+@media (max-width: 320px) {
+  .button-o {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
 .header {
-  background: url("../img/bg_yoga.png");
+  background: url("../img/bg_yoga.png") no-repeat;
   height: 663px;
+  background-position: center;
 }
 
 .navbar-wrap {
@@ -146,5 +161,26 @@ body {
   width: 26px;
   height: 26px;
   margin-left: 7px;
+}
+
+@media (max-width: 480px) {
+  .navbar__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-box {
+    padding-top: 50px;
+  }
+  .navbar__mobile {
+    display: none;
+  }
+  .navbar__title {
+    font-size: 22px;
+  }
+  .navbar__subtitle {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

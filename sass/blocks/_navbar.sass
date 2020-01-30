@@ -38,7 +38,7 @@
     font-size: 50px
     +medium
     text-transform: uppercase
-
+      
   &__subtitle
     font-size: 20px
     +regular
@@ -65,4 +65,17 @@
     width: 26px
     height: 26px
     margin-left: 7px
-
+@media (max-width: 480px)
+  .navbar
+    &__title
+      font-size: 35px
+@media (max-width: 320px)
+  .navbar
+    &-box 
+      padding-top: 50px
+    &__mobile
+      display: none
+    &__title
+      font-size: 22px
+    &__subtitle
+      font-size: 15px
