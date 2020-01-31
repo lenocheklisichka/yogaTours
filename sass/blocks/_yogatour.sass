@@ -44,3 +44,22 @@
     font-size: 16px
     +lightitalic
     text-transform: uppercase
+@media (max-width: 480px)
+  .yogatour
+    &__block
+      flex-direction: column
+    &__img
+      margin: 60px auto
+    &__box
+      margin-top: 0
+@media (max-width: 320px) 
+  .yogatour
+    &__img
+      background: url(../img/img_yoga_media.png) no-repeat
+      width: 260px
+      height: 327px
+    &__box
+      margin-top: 10px
+      margin-left: 20px
+    &__span
+      font-size: 35px

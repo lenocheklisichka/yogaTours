@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -75,6 +75,24 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .bg-secondary {
+    height: 980px;
+  }
+  .yogatour-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .bg-secondary {
+    height: 930px;
+  }
+}
+
 .header {
   background: url("../img/bg_yoga.png") no-repeat;
   height: 663px;
@@ -87,8 +105,8 @@ body {
   display: flex;
   padding-top: 13px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-box {
@@ -101,8 +119,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 90px;
 }
 
@@ -178,15 +196,12 @@ body {
   .navbar-box {
     padding-top: 50px;
   }
-
   .navbar__mobile {
     display: none;
   }
-
   .navbar__title {
     font-size: 22px;
   }
-
   .navbar__subtitle {
     font-size: 15px;
   }
@@ -197,8 +212,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .yogatour__img {
@@ -258,13 +273,40 @@ body {
   padding-top: 15px;
 }
 
-.yogatour__yoga,
-.yogatour__more,
-.yogatour__travel {
+.yogatour__yoga, .yogatour__more, .yogatour__travel {
   padding-left: 15px;
   font-size: 16px;
   font-family: 'Muller Light Italic', sans-serif;
   text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+  .yogatour__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .yogatour__img {
+    margin: 60px auto;
+  }
+  .yogatour__box {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .yogatour__img {
+    background: url(../img/img_yoga_media.png) no-repeat;
+    width: 260px;
+    height: 327px;
+  }
+  .yogatour__box {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .yogatour__span {
+    font-size: 35px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
