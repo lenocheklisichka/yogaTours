@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -63,6 +63,11 @@ body {
   margin-top: 60px;
 }
 
+.bg-secondary {
+  background: #f8f2e4;
+  height: 530px;
+}
+
 @media (max-width: 320px) {
   .button-o {
     padding: 15px 20px;
@@ -82,8 +87,8 @@ body {
   display: flex;
   padding-top: 13px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navbar-box {
@@ -96,8 +101,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 90px;
 }
 
@@ -173,14 +178,93 @@ body {
   .navbar-box {
     padding-top: 50px;
   }
+
   .navbar__mobile {
     display: none;
   }
+
   .navbar__title {
     font-size: 22px;
   }
+
   .navbar__subtitle {
     font-size: 15px;
   }
 }
+
+.yogatour-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.yogatour__img {
+  background: url(../img/img_yoga.png) no-repeat;
+  width: 350px;
+  height: 440px;
+  margin-top: 45px;
+}
+
+.yogatour__box {
+  max-width: 340px;
+  margin: 70px 0 0 70px;
+  color: #000;
+}
+
+.yogatour__title {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  font-family: 'Muller Medium', sans-serif;
+}
+
+.yogatour__span {
+  font-size: 40px;
+  font-family: 'Muller Medium', sans-serif;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.yogatour__text {
+  font-size: 15px;
+  font-family: 'Muller Light Italic', sans-serif;
+  padding-top: 25px;
+}
+
+.yogatour__mat {
+  background: url(../img/yoga_mat.png) no-repeat;
+  width: 30px;
+  height: 20px;
+}
+
+.yogatour__mor {
+  background: url(../img/yoga_more.png) no-repeat;
+  width: 30px;
+  height: 22px;
+}
+
+.yogatour__telegram {
+  background: url(../img/yoga_telegram.png) no-repeat;
+  width: 27px;
+  height: 28px;
+}
+
+.yogatour__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+.yogatour__yoga,
+.yogatour__more,
+.yogatour__travel {
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: 'Muller Light Italic', sans-serif;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */
