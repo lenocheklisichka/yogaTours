@@ -3,6 +3,14 @@ body
   padding: 0
   +regular
   color: $text-color
+.section
+  padding: 70px 0
+  &-title
+    font-size: 33px
+    +medium
+    color: $text-gray
+    text-align: center
+    padding-bottom: 60px
 .button-o
   display: block
   text-transform: uppercase
@@ -29,4 +37,11 @@ body
 @media (max-width: 320px)
   .bg-secondary
     height: 930px
-  
+@media (max-width: 480px)
+  .section
+    &-title
+      font-size: 26px 
+@media (max-width: 320px)
+  .section
+    &-title
+      font-size: 19px

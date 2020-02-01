@@ -50,6 +50,18 @@ body {
   color: #fff;
 }
 
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 33px;
+  font-family: 'Muller Medium', sans-serif;
+  color: #000;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 .button-o {
   display: block;
   text-transform: uppercase;
@@ -93,8 +105,20 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-title {
+    font-size: 19px;
+  }
+}
+
 .header {
-  background: url("../img/bg_yoga.png") no-repeat;
+  background: url(../img/header/bg_yoga.png) no-repeat;
   height: 663px;
   background-position: center;
 }
@@ -125,7 +149,7 @@ body {
 }
 
 .navbar__logo {
-  background: url("../img/bg_logo.png") no-repeat;
+  background: url("../img/header/bg_logo.png") no-repeat;
   width: 80px;
   height: 160px;
 }
@@ -167,20 +191,20 @@ body {
 }
 
 .navbar__vkontakte {
-  background: url(../img/icon_vkontakte.png) no-repeat;
+  background: url(../img/header/icon_vkontakte.png) no-repeat;
   width: 26px;
   height: 26px;
 }
 
 .navbar__facebook {
-  background: url(../img/icon_facebook.png) no-repeat;
+  background: url(../img/header/icon_facebook.png) no-repeat;
   width: 26px;
   height: 26px;
   margin-left: 7px;
 }
 
 .navbar__instagram {
-  background: url(../img/icon_instagram.png) no-repeat;
+  background: url(../img/header/icon_instagram.png) no-repeat;
   width: 26px;
   height: 26px;
   margin-left: 7px;
@@ -217,7 +241,7 @@ body {
 }
 
 .yogatour__img {
-  background: url(../img/img_yoga.png) no-repeat;
+  background: url(../img/yogatour/img_yoga.png) no-repeat;
   width: 350px;
   height: 440px;
   margin-top: 45px;
@@ -249,19 +273,19 @@ body {
 }
 
 .yogatour__mat {
-  background: url(../img/yoga_mat.png) no-repeat;
+  background: url(../img/yogatour/yoga_mat.png) no-repeat;
   width: 30px;
   height: 20px;
 }
 
 .yogatour__mor {
-  background: url(../img/yoga_more.png) no-repeat;
+  background: url(../img/yogatour/yoga_more.png) no-repeat;
   width: 30px;
   height: 22px;
 }
 
 .yogatour__telegram {
-  background: url(../img/yoga_telegram.png) no-repeat;
+  background: url(../img/yogatour/yoga_telegram.png) no-repeat;
   width: 27px;
   height: 28px;
 }
@@ -297,7 +321,7 @@ body {
 
 @media (max-width: 320px) {
   .yogatour__img {
-    background: url(../img/img_yoga_media.png) no-repeat;
+    background: url(../img/yogatour/img_yoga_media.png) no-repeat;
     width: 260px;
     height: 327px;
   }
@@ -307,6 +331,41 @@ body {
   }
   .yogatour__span {
     font-size: 35px;
+  }
+}
+
+.triptour-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #000;
+}
+
+.triptour-block__item {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  text-align: center;
+}
+
+.triptour-block__text {
+  font-size: 14px;
+  font-family: 'Muller Regular', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .triptour-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .triptour-block__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
