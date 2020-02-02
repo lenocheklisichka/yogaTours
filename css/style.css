@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 736px;
+  max-width: 740px;
   margin: auto;
 }
 
@@ -50,8 +50,12 @@ body {
   color: #fff;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 .section-title {
@@ -78,6 +82,12 @@ body {
 .bg-secondary {
   background: #f8f2e4;
   height: 530px;
+}
+
+.bg-travel {
+  background-color: #f8f2e4;
+  height: 460px;
+  position: relative;
 }
 
 @media (max-width: 320px) {
@@ -367,5 +377,113 @@ body {
         flex-basis: 50%;
     padding-top: 20px;
   }
+}
+
+.travel-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.travel__yoga {
+  background: url(../img/travel/yoga.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 350px;
+  height: 367px;
+}
+
+.travel__therapy {
+  background: url(../img/travel/therapy.png) no-repeat;
+  width: 780px;
+  height: 400px;
+  position: relative;
+}
+
+.travel__more {
+  background: url(../img/travel/more.png) no-repeat;
+  width: 352px;
+  height: 367px;
+}
+
+.travel__box {
+  position: absolute;
+  top: 40%;
+  left: 26%;
+}
+
+.travel__ayurveda {
+  font-size: 17px;
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 50px;
+}
+
+.travel__text {
+  font-size: 14px;
+  font-family: 'Muller Regular', sans-serif;
+  text-align: center;
+}
+
+.schedule {
+  margin-top: 140px;
+}
+
+.schedule-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.schedule__item {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  margin: 8px auto;
+  background-color: #fff8e6;
+  color: #000;
+}
+
+.schedule__section {
+  text-align: center;
+  padding-top: 18px;
+}
+
+.schedule__date {
+  font-size: 12px;
+  font-family: 'Muller Light Italic', sans-serif;
+  text-align: center;
+}
+
+.schedule__reduction {
+  font-size: 15px;
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.schedule__link {
+  font-size: 10px;
+  font-family: 'Muller Regular', sans-serif;
+  padding-top: 15px;
+}
+
+.schedule__btn {
+  display: block;
+  border: 1px solid #e28234;
+  font-size: 10px;
+  font-family: 'Muller Bold', sans-serif;
+  color: #e28234;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  margin: 10px auto;
 }
 /*# sourceMappingURL=style.css.map */
