@@ -90,6 +90,12 @@ img {
   position: relative;
 }
 
+.bg-program {
+  background-color: #f8f2e4;
+  height: 460px;
+  position: relative;
+}
+
 @media (max-width: 320px) {
   .button-o {
     padding: 15px 20px;
@@ -135,6 +141,18 @@ img {
 
 @media (max-width: 480px) {
   .bg-travel {
+    height: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-program {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-program {
     height: 750px;
   }
 }
@@ -564,6 +582,114 @@ img {
   .schedule__item {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
+  }
+}
+
+.program-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program__boxing {
+  background: url(../img/program/boxing.png) no-repeat;
+  width: 350px;
+  height: 365px;
+}
+
+.program__second {
+  background: url(../img/program/second.png) no-repeat;
+  background-size: cover;
+  width: 780px;
+  height: 440px;
+  position: relative;
+  margin: 0 20px;
+}
+
+.program__third {
+  background: url(../img/program/third.png) no-repeat;
+  width: 350px;
+  height: 365px;
+}
+
+.program__box {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.program__day {
+  font-size: 24px;
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 100px;
+}
+
+.program__text {
+  font-size: 13px;
+  font-family: 'Muller Regular', sans-serif;
+  text-align: center;
+  line-height: 18px;
+}
+
+@media (max-width: 768px) {
+  .program-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .program__boxing {
+    background: url(../img/program/boxingmedia.png) no-repeat;
+    width: 650px;
+    height: 367px;
+  }
+  .program__second {
+    background: url(../img/program/secondmedia.png) no-repeat;
+    width: 650px;
+    height: 366px;
+    margin: 20px;
+  }
+  .program__third {
+    background: url(../img/program/thirdmedia.png) no-repeat;
+    width: 650px;
+    height: 367px;
+  }
+}
+
+@media (max-width: 480px) {
+  .program__box {
+    display: none;
+  }
+  .program__boxing {
+    background: url(../img/program/boxingmedia480.png) no-repeat;
+    width: 400px;
+    height: 226px;
+  }
+  .program__second {
+    background: url(../img/program/secondmedia480.png) no-repeat;
+    width: 400px;
+    height: 226px;
+    margin: 20px;
+  }
+  .program__third {
+    background: url(../img/program/thirdmedia480.png) no-repeat;
+    width: 400px;
+    height: 226px;
+  }
+}
+
+@media (max-width: 320px) {
+  .program__boxing, .program__third {
+    background-position: center;
+    margin: 0 20px;
+  }
+  .program__second {
+    background-position: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
