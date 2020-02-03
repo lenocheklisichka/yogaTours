@@ -127,6 +127,18 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .bg-travel {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-travel {
+    height: 750px;
+  }
+}
+
 .header {
   background: url(../img/header/bg_yoga.png) no-repeat;
   height: 663px;
@@ -379,6 +391,15 @@ img {
   }
 }
 
+@media (max-width: 320px) {
+  .triptour-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .travel-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,17 +413,17 @@ img {
 
 .travel__yoga {
   background: url(../img/travel/yoga.png) no-repeat;
-  background-position: center;
-  background-size: 100%;
   width: 350px;
   height: 367px;
 }
 
 .travel__therapy {
   background: url(../img/travel/therapy.png) no-repeat;
+  background-size: cover;
   width: 780px;
   height: 400px;
   position: relative;
+  margin: 0 20px;
 }
 
 .travel__more {
@@ -429,6 +450,51 @@ img {
   font-size: 14px;
   font-family: 'Muller Regular', sans-serif;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .travel-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .travel__yoga {
+    background: url(../img/travel/yogamedia.png) no-repeat;
+    width: 650px;
+    height: 367px;
+  }
+  .travel__therapy {
+    background: url(../img/travel/therapymedia.png) no-repeat;
+    width: 650px;
+    height: 366px;
+    margin: 20px;
+  }
+  .travel__more {
+    background: url(../img/travel/moremedia.png) no-repeat;
+    width: 650px;
+    height: 367px;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel__box {
+    display: none;
+  }
+  .travel__yoga {
+    background: url(../img/travel/yogamedia480.png) no-repeat;
+    width: 400px;
+    height: 226px;
+  }
+  .travel__therapy {
+    background: url(../img/travel/therapymedia480.png) no-repeat;
+    width: 400px;
+    height: 226px;
+    margin: 20px;
+  }
+  .travel__more {
+    background: url(../img/travel/moremedia480.png) no-repeat;
+    width: 400px;
+    height: 226px;
+  }
 }
 
 .schedule {
