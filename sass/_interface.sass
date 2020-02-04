@@ -1,12 +1,12 @@
 body
   margin: 0
   padding: 0
-  +regular
+  +light
   color: $text-color
 img
   max-width: 100%
 .section
-  padding: 80px 0
+  padding: 60px 0
   &-title
     font-size: 33px
     +medium
@@ -35,6 +35,11 @@ img
   background-color: $bg-secondary
   height: 460px
   position: relative
+.ayurveda-item
+  display: flex
+  max-width: 950px
+  margin: auto
+  padding-top: 100px
 @media (max-width: 320px)
   .button-o
     padding: 15px 20px
@@ -67,3 +72,9 @@ img
 @media (max-width: 480px)
   .bg-program
     height: 750px
+@media (max-width: 480px)
+  .ayurveda-item
+    flex-direction: column
+@media (max-width: 320px)
+  .ayurveda-item
+    padding-top: 50px
