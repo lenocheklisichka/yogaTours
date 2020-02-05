@@ -24,6 +24,7 @@ img
   color: $text-color
   background-color: transparent
   margin-top: 60px
+  cursor: pointer
 .bg-secondary
   background: $bg-secondary
   height: 530px
@@ -40,7 +41,12 @@ img
   max-width: 950px
   margin: auto
   padding-top: 100px
+.bg-instructors
+  background-color: $bg-secondary
+  height: 600px
 @media (max-width: 320px)
+  .section
+    padding: 40px 0
   .button-o
     padding: 15px 20px
     font-size: 14px
@@ -56,6 +62,7 @@ img
   .section
     &-title
       font-size: 26px 
+      padding-bottom: 50px
 @media (max-width: 320px)
   .section
     &-title
@@ -78,3 +85,7 @@ img
 @media (max-width: 320px)
   .ayurveda-item
     padding-top: 50px
+@media (max-width: 320px)
+  .bg-instructors
+    height: 500px
+    

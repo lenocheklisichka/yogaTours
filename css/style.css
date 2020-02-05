@@ -84,6 +84,7 @@ img {
   color: #fff;
   background-color: transparent;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .bg-secondary {
@@ -112,7 +113,15 @@ img {
   padding-top: 100px;
 }
 
+.bg-instructors {
+  background-color: #f8f2e4;
+  height: 600px;
+}
+
 @media (max-width: 320px) {
+  .section {
+    padding: 40px 0;
+  }
   .button-o {
     padding: 15px 20px;
     font-size: 14px;
@@ -140,6 +149,7 @@ img {
 @media (max-width: 480px) {
   .section-title {
     font-size: 26px;
+    padding-bottom: 50px;
   }
 }
 
@@ -185,6 +195,12 @@ img {
 @media (max-width: 320px) {
   .ayurveda-item {
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .bg-instructors {
+    height: 500px;
   }
 }
 
@@ -601,8 +617,14 @@ img {
   font-family: 'Muller Bold', sans-serif;
   color: #e28234;
   text-transform: uppercase;
-  padding: 8px 16px;
+  padding: 9px 16px;
   margin: 10px auto;
+  cursor: pointer;
+}
+
+.schedule__btn:hover {
+  background-color: #e28234;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -884,6 +906,217 @@ img {
   }
   .ayurveda__india {
     font-size: 14px;
+  }
+}
+
+.instructors {
+  color: #000;
+}
+
+.instructors__img1 {
+  background: url(../img/instructors/instructors_img1.png) no-repeat;
+  width: 750px;
+  height: 431px;
+  position: relative;
+}
+
+.instructors__img2 {
+  background: url(../img/instructors/instructors_img2.png) no-repeat;
+  width: 750px;
+  height: 431px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.instructors__image {
+  display: block;
+}
+
+.instructors__block {
+  width: 750px;
+  height: 137px;
+  background-color: #80878e;
+  opacity: 0.6;
+  position: absolute;
+  top: 68%;
+}
+
+.instructors__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 68%;
+  left: 7%;
+}
+
+.instructors__name {
+  font-size: 18px;
+  font-family: 'Muller Bold', sans-serif;
+}
+
+.instructors__profession {
+  font-size: 12px;
+  font-family: 'Muller Regular', sans-serif;
+  max-width: 87px;
+}
+
+.instructors__hr {
+  border-right: 1px solid #fff;
+  height: 70px;
+  margin-top: 30px;
+}
+
+.instructors__province {
+  font-size: 13px;
+  font-family: 'Muller Regular', sans-serif;
+  display: block;
+  padding-left: 30px;
+  max-width: 450px;
+}
+
+.instructors__item {
+  display: block;
+  color: #fff;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .instructors__img1 {
+    background: url(../img/instructors/instructors_img1media.png) no-repeat;
+    width: 650px;
+    height: 373px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .instructors__img2 {
+    background: url(../img/instructors/instructors_img2media.png) no-repeat;
+    width: 650px;
+    height: 373px;
+    margin: auto;
+  }
+  .instructors__block {
+    width: 650px;
+    height: 120px;
+  }
+  .instructors__name {
+    font-size: 15px;
+  }
+  .instructors__province {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .instructors__img1 {
+    background: url(../img/instructors/instructors_img1media480.png) no-repeat;
+    width: 400px;
+    height: 230px;
+  }
+  .instructors__img2 {
+    background: url(../img/instructors/instructors_img2media480.png) no-repeat;
+    width: 400px;
+    height: 230px;
+  }
+  .instructors__block {
+    width: 400px;
+    height: 100px;
+    top: 57%;
+  }
+  .instructors__item {
+    padding-top: 10px;
+  }
+  .instructors__box {
+    top: 53%;
+  }
+  .instructors__hr {
+    margin-top: 20px;
+  }
+  .instructors__name {
+    font-size: 13px;
+  }
+  .instructors__province {
+    font-size: 10px;
+  }
+  .instructors__profession {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  .instructors__img1 {
+    background: url(../img/instructors/instructors_img1media320.png) no-repeat;
+    width: 250px;
+    height: 144px;
+  }
+  .instructors__img2 {
+    background: url(../img/instructors/instructors_img2media320.png) no-repeat;
+    width: 250px;
+    height: 144px;
+  }
+  .instructors__block {
+    display: none;
+  }
+  .instructors__hr {
+    display: none;
+  }
+  .instructors__item {
+    padding: 0;
+  }
+  .instructors__name {
+    font-size: 11px;
+  }
+  .instructors__profession, .instructors__province {
+    font-size: 7px;
+  }
+}
+
+.reviews {
+  margin-top: 100px;
+}
+
+.reviews-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__box {
+  max-width: 490px;
+  padding-left: 35px;
+}
+
+.reviews__img {
+  background: url(../img/reviews/reviews_img.png) no-repeat;
+  width: 150px;
+  height: 150px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  font-family: 'Muller Medium', sans-serif;
+  display: block;
+}
+
+.reviews__email {
+  font-size: 13px;
+  font-family: 'Muller Light', sans-serif;
+  color: #ff0000;
+}
+
+.reviews__text {
+  font-size: 14px;
+  font-family: 'Muller Light Italic', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.reviews
+  margin-top: 100px
+  &-block
+    display: flex
+    color: $text-gray
+    justify-content: center
+  &__box
+    max-width: 490px
+    padding-left: 35px
+  &__img
+    background: url(../img/reviews/reviews_img.png) no-repeat
+    width: 150px
+    height: 150px
+  &__name
+    font-size: 18px
+    +medium
+    display: block
+  &__email
+    font-size: 13px
+    +light
+    color: #ff0000
+  &__text
+    font-size : 14px
+    +lightitalic
+@media (max-width: 768px)
+  .reviews
+    margin-top: 50px
