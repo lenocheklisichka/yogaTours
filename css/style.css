@@ -54,7 +54,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Muller Light', sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 img {
@@ -115,7 +115,12 @@ img {
 
 .bg-instructors {
   background-color: #f8f2e4;
-  height: 600px;
+  height: 955px;
+}
+
+.bg-features {
+  background-color: #f8f2e4;
+  height: 750px;
 }
 
 @media (max-width: 320px) {
@@ -208,6 +213,7 @@ img {
   background: url(../img/header/bg_yoga.png) no-repeat;
   height: 663px;
   background-position: center;
+  color: #fff;
 }
 
 .navbar-wrap {
@@ -488,6 +494,7 @@ img {
 .travel__therapy {
   background: url(../img/travel/therapy.png) no-repeat;
   background-size: cover;
+  color: #fff;
   width: 780px;
   height: 400px;
   position: relative;
@@ -661,6 +668,7 @@ img {
 .program__second {
   background: url(../img/program/second.png) no-repeat;
   background-size: cover;
+  color: #fff;
   width: 780px;
   height: 440px;
   position: relative;
@@ -1118,5 +1126,34 @@ img {
   .reviews {
     margin-top: 50px;
   }
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+.features-block__item {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features-block__heading {
+  font-size: 17px;
+  font-family: 'Muller Bold', sans-serif;
+}
+
+.features-block__text {
+  font-size: 14px;
+  font-family: 'Muller Light', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
