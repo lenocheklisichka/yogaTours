@@ -1,7 +1,7 @@
 .yogatour
   &-block
     display: flex
-    justify-content: center
+    justify-content: space-between
   &__img
     background: url(../img/yogatour/img_yoga.png) no-repeat
     width: 350px
@@ -9,8 +9,7 @@
     margin-top: 45px
   &__box
     max-width: 340px
-    margin: 70px 0 0 70px
-    color: $text-gray
+    margin-top: 70px
   &__title
     font-size: 25px
     letter-spacing: 1.5px
@@ -52,6 +51,7 @@
       margin: 60px auto
     &__box
       margin-top: 0
+      margin: auto
 @media (max-width: 320px) 
   .yogatour
     &__img
@@ -60,9 +60,9 @@
       height: 327px
     &__box
       margin-top: 10px
-      margin-left: 20px
     &__span
       font-size: 35px
-    &__text
+    &__title, &__text
       text-align: center
+
       

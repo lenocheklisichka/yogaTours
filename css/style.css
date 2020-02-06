@@ -203,9 +203,40 @@ img {
   }
 }
 
+@media (max-width: 480px) {
+  .bg-instructors {
+    height: 700px;
+  }
+}
+
 @media (max-width: 320px) {
   .bg-instructors {
     height: 500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .icon-block {
+    max-width: 170px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-features {
+    height: 950px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .bg-features {
+    height: 1570px;
+  }
+  .section-title {
+    font-size: 15px;
   }
 }
 
@@ -328,9 +359,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .yogatour__img {
@@ -342,8 +373,7 @@ img {
 
 .yogatour__box {
   max-width: 340px;
-  margin: 70px 0 0 70px;
-  color: #000;
+  margin-top: 70px;
 }
 
 .yogatour__title {
@@ -409,6 +439,7 @@ img {
   }
   .yogatour__box {
     margin-top: 0;
+    margin: auto;
   }
 }
 
@@ -420,12 +451,11 @@ img {
   }
   .yogatour__box {
     margin-top: 10px;
-    margin-left: 20px;
   }
   .yogatour__span {
     font-size: 35px;
   }
-  .yogatour__text {
+  .yogatour__title, .yogatour__text {
     text-align: center;
   }
 }
@@ -439,7 +469,6 @@ img {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #000;
 }
 
 .triptour-block__item {
@@ -589,7 +618,6 @@ img {
       flex-basis: 23%;
   margin: 8px auto;
   background-color: #fff8e6;
-  color: #000;
 }
 
 .schedule__section {
@@ -758,7 +786,6 @@ img {
 }
 
 .ayurveda {
-  color: #000;
   margin-top: 160px;
 }
 
@@ -915,10 +942,6 @@ img {
   .ayurveda__india {
     font-size: 14px;
   }
-}
-
-.instructors {
-  color: #000;
 }
 
 .instructors__img1 {
@@ -1088,15 +1111,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #000;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .reviews__box {
   max-width: 490px;
-  padding-left: 35px;
 }
 
 .reviews__img {
@@ -1118,13 +1138,48 @@ img {
 }
 
 .reviews__text {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Muller Light Italic', sans-serif;
 }
 
 @media (max-width: 768px) {
   .reviews {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews {
+    margin-top: 0;
+  }
+  .reviews-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+  }
+  .reviews__img {
+    margin: auto;
+  }
+  .reviews__name {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .reviews__email {
+    text-align: center;
+  }
+  .reviews__text {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews__text {
+    text-align: center;
+    font-size: 13px;
   }
 }
 
@@ -1155,5 +1210,25 @@ img {
 .features-block__text {
   font-size: 14px;
   font-family: 'Muller Light', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .features-block__item {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .features-block__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .features-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
