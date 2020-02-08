@@ -123,6 +123,11 @@ img {
   height: 750px;
 }
 
+.bg-cost {
+  background-color: #f8f2e4;
+  height: 1060px;
+}
+
 @media (max-width: 320px) {
   .section {
     padding: 40px 0;
@@ -1300,5 +1305,97 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.cost-wrap {
+  width: 700px;
+  height: 250px;
+  background-color: #fff;
+  position: relative;
+  margin: auto;
+}
+
+.cost__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+
+.cost__day {
+  font-size: 16px;
+  font-family: 'Muller Bold', sans-serif;
+}
+
+.cost__program {
+  font-size: 16px;
+  font-family: 'Muller Regular', sans-serif;
+  line-height: 30px;
+}
+
+.cost__euro {
+  font-size: 16px;
+  font-family: 'Muller Medium', sans-serif;
+  color: #dd490f;
+  display: block;
+  padding-top: 23px;
+}
+
+.cost__section2 {
+  display: block;
+}
+
+.cost__block {
+  width: 700px;
+  height: 60px;
+  background-color: #f4e1b6;
+  position: absolute;
+  top: 80%;
+}
+
+.cost__text {
+  font-size: 16px;
+  font-family: 'Muller Medium', sans-serif;
+}
+
+.cost__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 5px;
+}
+
+.cost__btn {
+  display: block;
+  text-transform: uppercase;
+  border: 2px solid #e28234;
+  background-color: #f4e1b6;
+  color: #e28234;
+  font-size: 10px;
+  font-family: 'Muller Bold', sans-serif;
+  width: 20%;
+  margin: 8px 0;
+}
+
+.cost__included {
+  font-size: 23px;
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cost__item1 {
+  font-size: 15px;
+  font-family: 'Muller Regular', sans-serif;
+}
+
+.cost__eurorate {
+  font-size: 17px;
+  font-family: 'Muller Bold', sans-serif;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
