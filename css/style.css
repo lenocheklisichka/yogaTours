@@ -125,7 +125,7 @@ img {
 
 .bg-cost {
   background-color: #f8f2e4;
-  height: 1060px;
+  height: 1230px;
 }
 
 @media (max-width: 320px) {
@@ -242,6 +242,18 @@ img {
   }
   .section-title {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-cost {
+    height: 1080px;
+  }
+}
+
+@media (max-width: 320px) {
+  .bg-cost {
+    height: 970px;
   }
 }
 
@@ -1391,11 +1403,162 @@ img {
 .cost__item1 {
   font-size: 15px;
   font-family: 'Muller Regular', sans-serif;
+  padding-left: 20px;
 }
 
 .cost__eurorate {
   font-size: 17px;
   font-family: 'Muller Bold', sans-serif;
   text-align: center;
+}
+
+.cost__check {
+  background: url(../img/cost/check.png) no-repeat;
+  width: 14px;
+  height: 10px;
+}
+
+.cost__block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cost__box2 {
+  max-width: 600px;
+  margin: auto;
+}
+
+.cost__delet {
+  background: url(../img/cost/delet.png) no-repeat;
+  width: 9px;
+  height: 9px;
+}
+
+@media (max-width: 480px) {
+  .cost-wrap {
+    width: 100%;
+    height: 200px;
+  }
+  .cost__block {
+    width: 100%;
+    height: 50px;
+  }
+  .cost__box {
+    padding-top: 10px;
+  }
+  .cost__program, .cost__day {
+    font-size: 12px;
+  }
+  .cost__euro {
+    font-size: 14px;
+  }
+  .cost__text {
+    font-size: 12px;
+  }
+  .cost__btn {
+    font-size: 9px;
+  }
+  .cost__item1 {
+    font-size: 12px;
+    padding-left: 24px;
+  }
+  .cost__box2 {
+    max-width: 400px;
+  }
+  .cost__eurorate {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cost-wrap {
+    height: 170px;
+  }
+  .cost__program, .cost__day {
+    font-size: 7px;
+  }
+  .cost__euro {
+    font-size: 9px;
+  }
+  .cost__text {
+    font-size: 7px;
+  }
+  .cost__btn {
+    font-size: 6px;
+    border: 1px solid;
+  }
+  .cost__block {
+    height: 35px;
+  }
+  .cost__included {
+    font-size: 18px;
+  }
+  .cost__item1, .cost__eurorate {
+    font-size: 11px;
+  }
+  .cost__check, .cost__delet {
+    display: none;
+  }
+}
+
+.document__text {
+  font-size: 13px;
+  font-family: 'Muller Light Italic', sans-serif;
+  text-align: center;
+}
+
+.document__heading {
+  font-size: 23px;
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.document__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 15px;
+}
+
+.document__img1 {
+  background: url(../img/document/img-1.png) no-repeat;
+  width: 110px;
+  height: 141px;
+}
+
+.document__img2 {
+  background: url(../img/document/img-2.png) no-repeat;
+  width: 110px;
+  height: 141px;
+}
+
+.document__img3 {
+  background: url(../img/document/img-3.png) no-repeat;
+  width: 110px;
+  height: 141px;
+}
+
+.document__img4 {
+  background: url(../img/document/img-4.png) no-repeat;
+  width: 110px;
+  height: 141px;
+}
+
+.document__text1 {
+  font-size: 11px;
+  font-family: 'Muller Regular', sans-serif;
+  text-align: center;
+}
+
+.document__img {
+  display: block;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
