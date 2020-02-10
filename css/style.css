@@ -1561,4 +1561,41 @@ img {
   display: block;
   margin: auto;
 }
+
+@media (max-width: 480px) {
+  .document__text {
+    font-size: 11px;
+  }
+  .document__heading {
+    font-size: 18px;
+  }
+  .document__text1 {
+    font-size: 9px;
+  }
+  .document__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .document__text {
+    font-size: 10px;
+  }
+  .document__heading {
+    font-size: 12px;
+  }
+  .document__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .document__box {
+    padding-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
