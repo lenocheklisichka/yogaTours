@@ -23,5 +23,20 @@
     border-bottom: 1px solid #fff
   &__box
     display: flex
-    justify-content: space-around
+@media (max-width: 480px)
+  .footer
+    height: 160px
+    &-wrap
+      flex-wrap: wrap
+      justify-content: center
+    &__text
+      text-align: center
+@media (max-width: 480px)
+  .footer
+    &__email
+      font-size: 14px
+    &__text
+      font-size: 9px
+
+
 

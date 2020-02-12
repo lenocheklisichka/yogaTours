@@ -57,6 +57,10 @@ body {
   color: #000;
 }
 
+h2, h3 {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -262,6 +266,18 @@ img {
   }
 }
 
+@media (max-width: 480px) {
+  .bg-contacts {
+    height: 500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .bg-contacts {
+    height: 720px;
+  }
+}
+
 .header {
   background: url(../img/header/bg_yoga.png) no-repeat;
   height: 663px;
@@ -442,7 +458,7 @@ img {
   padding-top: 15px;
 }
 
-.yogatour__yoga, .yogatour__more, .yogatour__travel {
+.yogatour__item {
   padding-left: 15px;
   font-size: 16px;
   font-family: 'Muller Light Italic', sans-serif;
@@ -463,6 +479,13 @@ img {
     margin-top: 0;
     margin: auto;
   }
+  .yogatour__title {
+    text-align: center;
+  }
+  .yogatour__network {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 320px) {
@@ -479,6 +502,14 @@ img {
   }
   .yogatour__title, .yogatour__text {
     text-align: center;
+  }
+  .yogatour__blocks {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .yogatour__item {
+    font-size: 10px;
   }
 }
 
@@ -1608,12 +1639,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contacts__heading {
   font-size: 20px;
   font-family: 'Muller Medium', sans-serif;
-  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contacts__text {
@@ -1650,7 +1684,12 @@ img {
 .contacts__text2 {
   font-size: 10px;
   font-family: 'Muller Light Italic', sans-serif;
-  margin: 0;
+}
+
+.contacts__text3 {
+  font-size: 15px;
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
 }
 
 .contacts__tel {
@@ -1660,18 +1699,12 @@ img {
   text-decoration: none;
 }
 
-.contacts__box1 {
-  padding-right: 100px;
-}
-
-.contacts__box2 {
-  padding-top: 47px;
-}
-
 .contacts__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contacts__map1 {
@@ -1697,8 +1730,44 @@ img {
   font-family: 'Muller Regular', sans-serif;
 }
 
-.contacts__block1, .contacts__block2 {
-  padding-right: 10px;
+@media (max-width: 480px) {
+  .contacts__heading {
+    font-size: 18px;
+  }
+  .contacts__text {
+    font-size: 12px;
+  }
+  .contacts__text2 {
+    font-size: 9px;
+  }
+  .contacts__tel {
+    font-size: 21px;
+  }
+  .contacts__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacts__text3 {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__text {
+    text-align: center;
+  }
+  .contacts__block2, .contacts__block3 {
+    margin-top: 20px;
+  }
 }
 
 .footer {
@@ -1742,7 +1811,30 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: 160px;
+  }
+  .footer-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__email {
+    font-size: 14px;
+  }
+  .footer__text {
+    font-size: 9px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
